@@ -101,6 +101,7 @@ export default {
   h1 {
     font-size: 20px;
     font-weight: 400;
+    white-space: nowrap;
   }
   h2 {
     font-size: 16px;

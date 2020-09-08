@@ -8,13 +8,8 @@
       :style="purple"
     />
     <Examenes title="Hemograma" motivoconsulta="Control colesterol" ok fecha="15/09/20" />
-    <Examenes title="Cirugía" motivoconsulta="Quiste en zona lumbar" ok fecha="18/05/16" />
-    <Examenes
-      title="Fractura de clavícula"
-      motivoconsulta="Dolor Gastroesofágico"
-      fecha="24/10/95"
-      ok
-    />
+    <Examenes title="Cirugía" motivoconsulta="Infarto al miocardio" ok fecha="12/08/10" />
+    <Examenes title="Traumatología" motivoconsulta="Fractura de clavícula" fecha="24/10/96" ok />
     <Examenes title="Traumatología" motivoconsulta="Fractura de Fémur" ok fecha="24/10/95" />
   </div>
 </template>

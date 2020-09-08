@@ -92,6 +92,7 @@ export default {
     align-items: center;
     text-decoration: none;
     margin-bottom: 30px;
+    transition: transform 0.3s ease;
 
     @media (max-width: 500px) {
       margin-bottom: 0;
@@ -104,6 +105,9 @@ export default {
         width: 25px;
         margin-bottom: 0;
       }
+    }
+    &:hover {
+      transform: scale(1.05);
     }
   }
   a {
@@ -121,10 +125,16 @@ export default {
   .logout {
     width: unset;
     .dmenu-btn {
+      transform: scale(1);
+      transition: transform 0.3s ease;
       img {
+        transition: transform 0.3s ease;
         @media (max-width: 500px) {
           width: 30px;
           margin-bottom: -5px;
+        }
+        &:hover {
+          transform: scale(1.05);
         }
       }
     }

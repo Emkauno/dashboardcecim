@@ -1,5 +1,6 @@
 <template>
   <div class="anamnesis">
+    <h1>Anamnesis de paciente</h1>
     <Card title="Información Personal" title2="Antecedentes Mórbidos" title3="Última consulta" />
   </div>
 </template>
@@ -21,5 +22,9 @@ export default {
   align-items: flex-start;
   justify-content: center;
   padding: 30px;
+  h1 {
+    margin: 25px 5px;
+    font-size: 25px;
+  }
 }
 </style>
