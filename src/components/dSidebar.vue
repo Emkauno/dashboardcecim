@@ -21,7 +21,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+    methods: {
+    logout() {
+      localStorage.removeItem("userlogged");
+      this.$router.push("/login");
+    }
+  }
+};
 </script>
 
 <style lang="scss">

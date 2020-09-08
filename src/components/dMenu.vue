@@ -14,12 +14,7 @@ export default {
   components: {
     Paciente
   },
-  methods: {
-    logout() {
-      localStorage.removeItem("userlogged");
-      this.$router.push("/login");
-    }
-  }
+
 };
 </script>
 
