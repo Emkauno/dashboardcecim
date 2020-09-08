@@ -2,9 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Login from "../views/Login.vue";
 import Dashboard from "../views/Dashboard.vue";
-import anamnesisPaciente from "../views/anamnesisPaciente";
-import examenesPaciente from "../views/examenesPaciente";
-
+import AnamnesisPaciente from "../views/anamnesisPaciente";
+import ExamenesPaciente from "../views/examenesPaciente";
+import MainContent from "../views/MainContent";
 Vue.use(VueRouter);
 
 const routes = [
@@ -12,12 +12,14 @@ const routes = [
     path: "/",
     name: "dashboard",
     component: Dashboard,
+    redirect: "/dashboard",
     meta: {
       requiresAuth: true,
     },
     children: [
-      { path: "/anamnesis", name: "anamnesis", component: anamnesisPaciente },
-      { path: "/examenes", name: "examenes", component: examenesPaciente },
+      { path: "/dashboard", name: "home", component: MainContent },
+      { path: "/anamnesis", name: "anamnesis", component: AnamnesisPaciente },
+      { path: "/examenes", name: "examenes", component: ExamenesPaciente },
     ],
   },
   {

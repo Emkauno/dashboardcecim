@@ -1,6 +1,6 @@
 <template>
   <div class="dmenu">
-    <div class="dmenu-title">Bienvenido</div>
+    <div class="dmenu-title">Estás viendo el historial clínico de:</div>
     <div class="dmenu-right">
       <Paciente />
     </div>
@@ -13,8 +13,7 @@ export default {
   name: "dmenu",
   components: {
     Paciente
-  },
-
+  }
 };
 </script>
 
@@ -24,22 +23,23 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 100px;
     padding: 30px;
     width: 100%;
-    padding-left: 135px;
+    margin: 30px 0;
     @media (max-width: 500px) {
       padding: 0 20px;
       flex-direction: column;
     }
     &-title {
-      width: 80%;
+      width: 30%;
       text-align: left;
+      font-weight: 400;
       @media (max-width: 500px) {
         font-size: 25px;
         width: unset;
-        margin-top: 20px;
+        margin-top: 70px;
         margin-bottom: 10px;
       }
     }

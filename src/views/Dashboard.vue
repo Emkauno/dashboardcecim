@@ -22,13 +22,18 @@ export default {
 </script>
 <style lang="scss">
 .dashboard {
-  background: var(--gray-light);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.699),
+    rgba(255, 255, 255, 0.486)
+  );
   border-radius: 8px;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   position: relative;
+
   &-content {
     display: flex;
     flex-direction: row;

@@ -83,8 +83,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: var(--black-2);
+  color: var(--black);
   border-radius: 8px;
+  box-shadow: 2px 4px 15px 0px rgba(115, 94, 155, 0.1);
   @media (max-width: 500px) {
     width: 100%;
     margin-bottom: 25px;
@@ -99,13 +100,16 @@ export default {
   }
   h1 {
     font-size: 20px;
+    font-weight: 400;
   }
   h2 {
     font-size: 16px;
+    font-weight: 400;
   }
   p {
     font-size: 15px;
     margin-left: 10px;
+    font-weight: 400;
   }
 }
 </style>

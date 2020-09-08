@@ -1,10 +1,12 @@
 <template>
   <div class="sidebar">
     <div class="sidebar-container">
-      <router-link class="sidebar-user" to="/">
+      <router-link class="sidebar-user" to="/dashboard">
         <img src="../assets/avatar.png" alt />
       </router-link>
-
+      <router-link class="sidebar-link" to="/dashboard">
+        <img src="../assets/icons/home.svg" alt />
+      </router-link>
       <router-link class="sidebar-link" to="/anamnesis">
         <img src="../assets/icons/medical-history.svg" alt />
       </router-link>
@@ -22,7 +24,7 @@
 
 <script>
 export default {
-    methods: {
+  methods: {
     logout() {
       localStorage.removeItem("userlogged");
       this.$router.push("/login");
@@ -63,17 +65,24 @@ export default {
   min-height: 800px;
   width: 100px;
   @media (max-width: 500px) {
+    flex-direction: row;
     min-height: 100px;
+    justify-content: center;
+    padding: 50px 5px;
+    width: 100%;
   }
+
   &-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     @media (max-width: 500px) {
+      width: unset;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      padding-left: 20px;
     }
   }
   &-link {
@@ -83,19 +92,22 @@ export default {
     align-items: center;
     text-decoration: none;
     margin-bottom: 30px;
+
     @media (max-width: 500px) {
       margin-bottom: 0;
-      margin-right: 40px;
+      margin-right: 20px;
     }
     img {
       width: 30px;
+      margin-bottom: 40px;
       @media (max-width: 500px) {
-        width: 35px;
+        width: 25px;
+        margin-bottom: 0;
       }
     }
   }
   a {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     @media (max-width: 500px) {
       margin-bottom: 0;
     }
@@ -105,10 +117,15 @@ export default {
     height: 100px;
     flex-direction: row;
   }
-  .dmenu-btn {
-    img {
-      @media (max-width: 500px) {
-        width: 40px;
+
+  .logout {
+    width: unset;
+    .dmenu-btn {
+      img {
+        @media (max-width: 500px) {
+          width: 30px;
+          margin-bottom: -5px;
+        }
       }
     }
   }

@@ -32,7 +32,7 @@ export default {
           console.log(res);
         })
         .then(() => {
-          this.$router.push("/");
+          this.$router.push("/dashboard");
         })
         .catch(function(error) {
           store.commit("failed", true);
@@ -79,7 +79,7 @@ export default {
     }
     &:focus {
       background-color: var(--white);
-      border: 2px solid var(--blue);
+      border: 2px solid var(--purple);
       outline: none;
       color: var(--black-2);
     }
@@ -88,11 +88,17 @@ export default {
     padding: 5px 20px;
     align-self: flex-end;
     border-radius: 8px;
-    background: var(--blue-light);
-    border: 1px solid var(--blue);
+    background-color: var(--orange);
+    border: 1px solid var(--gray);
     color: var(--white);
     text-transform: uppercase;
     font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: rgb(255, 102, 0);
+    }
   }
   .loginerror {
     margin: 0;

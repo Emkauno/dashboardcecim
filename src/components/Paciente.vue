@@ -17,19 +17,18 @@ export default {
 <style lang="scss">
 .paciente {
   background-color: var(--white);
-  box-shadow: 2px 4px 11px 0px rgba(115, 94, 155, 0.03);
+  box-shadow: 2px 4px 11px 0px rgba(115, 94, 155, 0.1);
   padding: 5px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  width: 100%;
   &-nombre {
     white-space: nowrap;
     font-size: 18px;
     font-weight: bold;
-    color: var(--black);
+    color: var(--purple);
   }
   &-datos {
     display: flex;
@@ -38,7 +37,7 @@ export default {
     justify-content: space-between;
     h2 {
       font-size: 15px;
-      color: var(--black-2);
+      color: var(--purple);
       margin-right: 30px;
     }
   }
