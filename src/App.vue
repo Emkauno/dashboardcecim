@@ -39,7 +39,7 @@ body {
   justify-content: center;
   background: var(--white);
   height: 100%;
-  background: url(assets/img/background.svg);
+  background: url(assets/background.svg);
   background-size: cover;
 }
 

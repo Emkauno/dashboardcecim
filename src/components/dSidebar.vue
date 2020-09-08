@@ -50,7 +50,7 @@ export default {};
   align-items: center;
   justify-content: space-between;
   padding: 50px 20px;
-  background: url(../assets/img/bgsidebar.svg);
+  background: url(../assets/bgsidebar.svg);
   background-size: cover;
   border-radius: 8px;
   min-height: 800px;
