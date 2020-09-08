@@ -45,6 +45,9 @@ export default {
     color: white;
     transform: scale(1.02);
   }
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
 }
 .card-examen {
   padding: 20px;
