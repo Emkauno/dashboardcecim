@@ -6,8 +6,13 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     isAuthenticated: false,
+    failedlogin: null,
   },
-  mutations: {},
+  mutations: {
+    failed(state, n) {
+      state.failedlogin = n;
+    },
+  },
   actions: {},
   modules: {},
 });
