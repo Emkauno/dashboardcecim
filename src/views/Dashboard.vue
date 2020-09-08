@@ -4,7 +4,9 @@
       <dSidebar />
       <div class="dashboard-right">
         <dMenu />
-        <router-view class="dashboard-right"></router-view>
+        <transition name="fade" mode="out-in">
+          <router-view class="dashboard-right"></router-view>
+        </transition>
       </div>
     </div>
   </div>
@@ -24,9 +26,10 @@ export default {
 .dashboard {
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.699),
-    rgba(255, 255, 255, 0.486)
+    rgba(255, 255, 255, 0.299),
+    rgba(255, 255, 255, 0.286)
   );
+  backdrop-filter: blur(10px);
   border-radius: 8px;
   width: 100%;
   display: flex;
@@ -48,5 +51,16 @@ export default {
   @media (max-width: 500px) {
     margin-top: 0;
   }
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  transform: translatey(20px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
 }
 </style>
